@@ -1,6 +1,6 @@
 cask "ynot" do
-  version "0.5.0"
-  sha256 "7891b1242836763a424dd781ee931b6ba242366543a1f6649ebf527ff8da008c"
+  version "0.5.1"
+  sha256 "f42b231ff350e9de180f1c277206076210d7da2133e690701fe4dbd424196389"
 
   url "https://github.com/james-see/ynot/releases/download/v#{version}/ynot-macos.dmg"
   name "YNOT"
