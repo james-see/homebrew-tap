@@ -11,7 +11,7 @@ class Synthtribe2midi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Darwin_x86_64.tar.gz"
-      sha256 "d8593def9c7e859721d2ed860578f00e38d0a49e288984e837aa629edf50de66"
+      sha256 "53f9484bb9efdce029ac5d8b831c4332cf183bb6faf7e176f9250191b2c67c44"
 
       def install
         bin.install "synthtribe2midi"
@@ -20,7 +20,7 @@ class Synthtribe2midi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Darwin_arm64.tar.gz"
-      sha256 "14291bccdc765a02fcac2e9ee17234bf24eaa2e2c8e1fd6360513c3a765fb11f"
+      sha256 "9e68f7da5f1fe28982c1d57356360688c814764869326d0df69378279313f889"
 
       def install
         bin.install "synthtribe2midi"
@@ -32,7 +32,7 @@ class Synthtribe2midi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Linux_x86_64.tar.gz"
-      sha256 "305cfd9bf86dd037c90b45d7a7dc90cb224f8929e6f0c9cfd104129943d18b68"
+      sha256 "3ff95fa7da45507d8450a619f39a86e925f52498f0e7fb4eb7b2490b234943cc"
       def install
         bin.install "synthtribe2midi"
         bin.install "synthtribe2midi-server"
@@ -40,7 +40,7 @@ class Synthtribe2midi < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Linux_arm64.tar.gz"
-      sha256 "c80879ff0ac6d1846c67e4fbac048606bb440d0bc7ee6551a18e32bc5636a817"
+      sha256 "f26c5b14f5abaf4953566a930f1795a382264ff0c80fbe0ef56dc384b4be39c6"
       def install
         bin.install "synthtribe2midi"
         bin.install "synthtribe2midi-server"
