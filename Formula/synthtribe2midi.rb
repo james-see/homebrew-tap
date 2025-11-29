@@ -5,13 +5,13 @@
 class Synthtribe2midi < Formula
   desc "Convert between MIDI and Behringer SynthTribe formats"
   homepage "https://james-see.github.io/synthtribe2midi"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Darwin_x86_64.tar.gz"
-      sha256 "53f9484bb9efdce029ac5d8b831c4332cf183bb6faf7e176f9250191b2c67c44"
+      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.1/synthtribe2midi_Darwin_x86_64.tar.gz"
+      sha256 "34fdb8e48172f0ccdff890fa01a4d93f51e7c5c5cd2cc8c43c354d9a54cef3b6"
 
       def install
         bin.install "synthtribe2midi"
@@ -19,8 +19,8 @@ class Synthtribe2midi < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Darwin_arm64.tar.gz"
-      sha256 "9e68f7da5f1fe28982c1d57356360688c814764869326d0df69378279313f889"
+      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.1/synthtribe2midi_Darwin_arm64.tar.gz"
+      sha256 "f840945b841d0ac5dcefee7653d4fd65d99e08160e976eb8d5c28872f045b6c1"
 
       def install
         bin.install "synthtribe2midi"
@@ -31,16 +31,16 @@ class Synthtribe2midi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Linux_x86_64.tar.gz"
-      sha256 "3ff95fa7da45507d8450a619f39a86e925f52498f0e7fb4eb7b2490b234943cc"
+      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.1/synthtribe2midi_Linux_x86_64.tar.gz"
+      sha256 "4a586a60cad56b8746de7d23a0a116f59641cb4eb1b1f4f6c99d77e0f0aee470"
       def install
         bin.install "synthtribe2midi"
         bin.install "synthtribe2midi-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.0/synthtribe2midi_Linux_arm64.tar.gz"
-      sha256 "f26c5b14f5abaf4953566a930f1795a382264ff0c80fbe0ef56dc384b4be39c6"
+      url "https://github.com/james-see/synthtribe2midi/releases/download/v0.1.1/synthtribe2midi_Linux_arm64.tar.gz"
+      sha256 "f6daa0780717285f927943f48080820327c51f0d17cd831c7cb0988f2836c36b"
       def install
         bin.install "synthtribe2midi"
         bin.install "synthtribe2midi-server"
