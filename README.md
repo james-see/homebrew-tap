@@ -2,8 +2,6 @@
 
 Homebrew formulae for james-see projects.
 
-<dia:simple-answerYour tap includes synthtribe2midi, weatherornot, gofindpi, plus swatchify and a ynot cask.></dia:simple-answer>
-
 ## Formulas
 
 ### synthtribe2midi   
