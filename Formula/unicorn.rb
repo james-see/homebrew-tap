@@ -4,28 +4,28 @@
 class Unicorn < Formula
   desc "Terminal-based venture capital simulation game"
   homepage "https://github.com/james-see/unicorn"
-  version "4.2.0"
+  version "4.3.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/james-see/unicorn/releases/download/v4.2.0/unicorn-darwin-amd64.tar.gz"
-      sha256 "889a167b9cb7cd99d2ddd5413ee13edc6e8fcb3e819d40c52092d6ce9ee773d3"
+      url "https://github.com/james-see/unicorn/releases/download/v4.3.0/unicorn-darwin-amd64.tar.gz"
+      sha256 "79f1d02834fafb127a5b7b6ea6cb1e376a3f0b108dabfb4fedae7190f0d487e7"
     end
     on_arm do
-      url "https://github.com/james-see/unicorn/releases/download/v4.2.0/unicorn-darwin-arm64.tar.gz"
-      sha256 "67c02d40ea08a73b60256c3484488a4ea6c4b0897e839891fc46e26db182d700"
+      url "https://github.com/james-see/unicorn/releases/download/v4.3.0/unicorn-darwin-arm64.tar.gz"
+      sha256 "f42ad6015116d1cfee42c2045435d413c4a19ec914a0ce243c156836feb5861f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/james-see/unicorn/releases/download/v4.2.0/unicorn-linux-amd64.tar.gz"
-      sha256 "a146a51ef5086757a808e4607e5244a9772868022287147d5c83dba7f52a1271"
+      url "https://github.com/james-see/unicorn/releases/download/v4.3.0/unicorn-linux-amd64.tar.gz"
+      sha256 "b76ccff2167f37bc6fa628f8c22b022c235a026c186b09f520c25b823372e3a6"
     end
     on_arm do
-      url "https://github.com/james-see/unicorn/releases/download/v4.2.0/unicorn-linux-arm64.tar.gz"
-      sha256 "f99e4464d87b61959b047fd271ecb64da885ac2f258508aeb68156dab2a9da13"
+      url "https://github.com/james-see/unicorn/releases/download/v4.3.0/unicorn-linux-arm64.tar.gz"
+      sha256 "69171000ce7a15104c1e911ce9e323640c452659c5e73f4f30c73fc8ec4f38a1"
     end
   end
 
