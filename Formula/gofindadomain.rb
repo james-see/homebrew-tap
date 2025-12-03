@@ -11,7 +11,7 @@ class Gofindadomain < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/james-see/gofindadomain/releases/download/v1.0.1/gofindadomain_1.0.1_darwin_amd64.tar.gz"
-      sha256 "ca725c7fac486ba94949a628f9abd1c08e23ebcf0058f9b400f8f521ed79e3b6"
+      sha256 "dd95d249f67602bddcf5bb83daef0e949b9304eea2fbdc0a8525b7806fd4b307"
 
       def install
         bin.install "gofindadomain"
@@ -19,7 +19,7 @@ class Gofindadomain < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/james-see/gofindadomain/releases/download/v1.0.1/gofindadomain_1.0.1_darwin_arm64.tar.gz"
-      sha256 "5df70af99c12d461d9a4c6f248f737e0cb1b41fa135700abdd1b6c1a23273490"
+      sha256 "d35af92ba3bc409b45e2f21b927bc32412f40c92af728a052f0668460118010c"
 
       def install
         bin.install "gofindadomain"
@@ -30,14 +30,14 @@ class Gofindadomain < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/james-see/gofindadomain/releases/download/v1.0.1/gofindadomain_1.0.1_linux_amd64.tar.gz"
-      sha256 "8f2d946d2d86ba1a16e0e32d9444a4bd23660499385b9f67813ea61a90b33771"
+      sha256 "93635d540946fb7d7b985c1ebd1515318c041b1e9f75998296904b19f2947937"
       def install
         bin.install "gofindadomain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/james-see/gofindadomain/releases/download/v1.0.1/gofindadomain_1.0.1_linux_arm64.tar.gz"
-      sha256 "8fc26855c8a3af9a2d8e2fdac6e48fd6b79eb1589b73a3096e773abeb62cb06b"
+      sha256 "006095ba17dc0fb73c45de9750b473ced303cd200c1b0541c757d303c6a20fa0"
       def install
         bin.install "gofindadomain"
       end
