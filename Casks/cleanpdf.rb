@@ -1,6 +1,6 @@
 cask "cleanpdf" do
-  version "2.0.0"
-  sha256 "7a1a05f47671de85d3b7f3ae54a20ccc177a81c7bcab346279ff0404d0dc4b39"
+  version "2.0.1"
+  sha256 "0cf857bf3a9c455d6c68d133f86496994ce0c0994b7595af60ab5d445fffe2a7"
 
   url "https://github.com/james-see/cleanpdfapp/releases/download/v#{version}/CleanPDF-macos-v#{version}.zip"
   name "Clean PDF"
