@@ -5,21 +5,21 @@
 class Gofindadomain < Formula
   desc "Domain availability checker with TUI - Go find a domain!"
   homepage "https://github.com/james-see/gofindadomain"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.2/gofindadomain_1.0.2_darwin_amd64.tar.gz"
-      sha256 "f7d1c5cd4dd2d6cb8bd6d1646b3e5bf7e462125041c9aa17e6ec6a203b4f2e44"
+      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.3/gofindadomain_1.0.3_darwin_amd64.tar.gz"
+      sha256 "fbcf1ba9545fdd19298ada6932f8d510524f24bb38a1eafff5e6bbce23c01836"
 
       def install
         bin.install "gofindadomain"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.2/gofindadomain_1.0.2_darwin_arm64.tar.gz"
-      sha256 "c2bcfa9be534a2b658c073959e7d0e30a81c9cfdd97543d2609ec07d9adeb1cf"
+      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.3/gofindadomain_1.0.3_darwin_arm64.tar.gz"
+      sha256 "778c3cdfae50c82568b213e74397049317e154928f6d95e514b35fd0b2f2c9cf"
 
       def install
         bin.install "gofindadomain"
@@ -29,15 +29,15 @@ class Gofindadomain < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.2/gofindadomain_1.0.2_linux_amd64.tar.gz"
-      sha256 "dd84aee85617c27476490e16fc979044f9ba21a536eb41fabc5c5a4efbe122a6"
+      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.3/gofindadomain_1.0.3_linux_amd64.tar.gz"
+      sha256 "6b6a9d1f5a808f67e28320186a6493f5b100213b9ba4a94131816c93d900b626"
       def install
         bin.install "gofindadomain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.2/gofindadomain_1.0.2_linux_arm64.tar.gz"
-      sha256 "eeb541253f183136068d7de15d8d8d5cf546eec5d6a6905d0c5ec1165866bad3"
+      url "https://github.com/james-see/gofindadomain/releases/download/v1.0.3/gofindadomain_1.0.3_linux_arm64.tar.gz"
+      sha256 "b27434976ed4170c4e68b70a0531a6a902c83777b0e068c4c3eebc86fe063c7e"
       def install
         bin.install "gofindadomain"
       end
