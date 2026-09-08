@@ -4,6 +4,12 @@ Homebrew formulae for james-see projects.
 
 ## Formulae (CLI tools)
 
+### temper
+Adaptive control plane for coding agents. Supervises agents and models: measures progress, detects stalls and loops, changes strategy, and verifies outcomes.
+```
+brew install temper
+```
+
 ### gofindpi
 Go utility to locate and identify Raspberry Pi devices on your network quickly. Useful for headless setups and DietPi boxes; reports IP and model so you can SSH in without guesswork.
 ```
@@ -63,6 +69,7 @@ brew tap james-see/tap
 
 - Install (short names after tap):
 ```
+brew install temper
 brew install gofindpi
 brew install gofindadomain
 brew install synthtribe2midi
@@ -80,7 +87,7 @@ brew update && brew upgrade
 
 - Uninstall:
 ```
-brew uninstall gofindpi gofindadomain synthtribe2midi unicorn weatherornot swatchify
+brew uninstall temper gofindpi gofindadomain synthtribe2midi unicorn weatherornot swatchify
 brew uninstall --cask ynot cleanpdf
 ```
 
