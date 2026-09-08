@@ -4,21 +4,21 @@
 class Temper < Formula
   desc "Adaptive control plane for coding agents"
   homepage "https://temper.baby"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/james-see/temper/releases/download/v0.1.3/temper_0.1.3_darwin_amd64.tar.gz"
-      sha256 "a4886e7e57c283c49f7aff77e697e530e6cf875b432813f8c168b65e824eef3e"
+      url "https://github.com/james-see/temper/releases/download/v0.1.4/temper_0.1.4_darwin_amd64.tar.gz"
+      sha256 "65847b44f3d65b4fc3522ce1266cd25c2a6ddd76012c7c7345b7c644f62299fa"
 
       def install
         bin.install "temper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/james-see/temper/releases/download/v0.1.3/temper_0.1.3_darwin_arm64.tar.gz"
-      sha256 "8e0aae93fbbc06fc3a75875d21609afb3316fb219566a827398387e922a853eb"
+      url "https://github.com/james-see/temper/releases/download/v0.1.4/temper_0.1.4_darwin_arm64.tar.gz"
+      sha256 "92f2f1ac2622fe2021385fe7ac9c23777beb24df1965d5ccfb301ab7ebb0f7a5"
 
       def install
         bin.install "temper"
@@ -28,15 +28,15 @@ class Temper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/temper/releases/download/v0.1.3/temper_0.1.3_linux_amd64.tar.gz"
-      sha256 "29c9fe5a2cad6cf22a6444be0116cb415c0e9aa5108452d996179c7f4b1ba750"
+      url "https://github.com/james-see/temper/releases/download/v0.1.4/temper_0.1.4_linux_amd64.tar.gz"
+      sha256 "0d6e0fcc7f010d1b38dffb51887fd7564eb26ee87da2480d813de06e91b6fe12"
       def install
         bin.install "temper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/temper/releases/download/v0.1.3/temper_0.1.3_linux_arm64.tar.gz"
-      sha256 "05aab534c1c5a31ca9323f1e5287fc8f3c06a68f1155950c1fd0270767b2589f"
+      url "https://github.com/james-see/temper/releases/download/v0.1.4/temper_0.1.4_linux_arm64.tar.gz"
+      sha256 "1f137c947d5d82876b1cb87cb0c1d161509f4f06f0da3d829cbcf1864a8dcc56"
       def install
         bin.install "temper"
       end
@@ -44,6 +44,6 @@ class Temper < Formula
   end
 
   test do
-    assert_match "temper 0.1.3", shell_output("#{bin}/temper version")
+    assert_match "temper 0.1.4", shell_output("#{bin}/temper version")
   end
 end
