@@ -5,21 +5,21 @@
 class Temper < Formula
   desc "Adaptive control plane for coding agents"
   homepage "https://temper.baby"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/james-see/temper/releases/download/v0.3.0/temper_0.3.0_darwin_amd64.tar.gz"
-      sha256 "1bb67a802615584cadd6c0c83154a6a8c80c6aa5ebb0de1dd98f646d806561b0"
+      url "https://github.com/james-see/temper/releases/download/v0.4.0/temper_0.4.0_darwin_amd64.tar.gz"
+      sha256 "f45f984c1cca85dabd8b3453312e1b8e09790749d5a90fa8ac20f15ef495d5c2"
 
       define_method(:install) do
         bin.install "temper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/james-see/temper/releases/download/v0.3.0/temper_0.3.0_darwin_arm64.tar.gz"
-      sha256 "05d6d05b7da30248744400a5732d273bcd902a4c3ea3a767934c93ad491eea03"
+      url "https://github.com/james-see/temper/releases/download/v0.4.0/temper_0.4.0_darwin_arm64.tar.gz"
+      sha256 "11795c6a4e2475269056faf2539adb534a966475b52cdc2a7b7cee09f2a18739"
 
       define_method(:install) do
         bin.install "temper"
@@ -29,15 +29,15 @@ class Temper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/temper/releases/download/v0.3.0/temper_0.3.0_linux_amd64.tar.gz"
-      sha256 "9a3cec2df611aa3ae43fd58f19c66091a6e17fff6af783ccc49f9ac94c1c384c"
+      url "https://github.com/james-see/temper/releases/download/v0.4.0/temper_0.4.0_linux_amd64.tar.gz"
+      sha256 "fb66255b5dde8dfb508549e87ae7e033d5b12461a35bce69cf13a9d326e4da0d"
       define_method(:install) do
         bin.install "temper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-see/temper/releases/download/v0.3.0/temper_0.3.0_linux_arm64.tar.gz"
-      sha256 "f9d823e8d7efb1c7f37e2b69cfc54536778f195e363cf866e4e175f1ddc022c7"
+      url "https://github.com/james-see/temper/releases/download/v0.4.0/temper_0.4.0_linux_arm64.tar.gz"
+      sha256 "9ec9fd14ecc4f81c876ca8c444ecda5dd71c4aac1f4272bab8d10b354b5b5478"
       define_method(:install) do
         bin.install "temper"
       end
